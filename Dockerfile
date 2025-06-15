@@ -61,4 +61,5 @@ WORKDIR /workspace/ComfyUI/
 
 RUN fetch_models.sh
 
+RUN pip install sageattention==1.0.6
 
