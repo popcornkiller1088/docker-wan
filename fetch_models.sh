@@ -46,15 +46,4 @@ grab \
   "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/clip_vision/clip_vision_h.safetensors" \
   "$CU_ROOT/models/clip_vision/clip_vision_h.safetensors"
 
-# -----------------------------------------------------------------------------
-# Optional: ComfyUI-Manager custom-node
-NODE_DIR="$CU_ROOT/custom_nodes/ComfyUI-Manager"
-if [[ -d "$NODE_DIR/.git" ]]; then
-    echo "✓ ComfyUI-Manager already cloned – pulling latest"
-    git -C "$NODE_DIR" pull --ff-only
-else
-    echo "↓ Cloning ComfyUI-Manager…"
-    git clone https://github.com/ltdrdata/ComfyUI-Manager "$NODE_DIR"
-fi
-
 echo "All done! 🥳"
