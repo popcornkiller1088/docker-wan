@@ -36,6 +36,7 @@ RUN pip install -r requirements.txt
 # install rgthree-comfy dependencies
 RUN git clone https://github.com/rgthree/rgthree-comfy /workspace/ComfyUI/custom_nodes/rgthree-comfy
 
+RUN pip install -r requirements.txt
 
 # install easy use dependencies
 RUN git clone https://github.com/yolain/ComfyUI-Easy-Use /workspace/ComfyUI/custom_nodes/ComfyUI-Easy-Use
@@ -49,6 +50,8 @@ RUN pip install -r requirements.txt
 RUN git clone https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite /workspace/ComfyUI/custom_nodes/ComfyUI-VideoHelperSuite
 
 WORKDIR /workspace/ComfyUI/custom_nodes/ComfyUI-VideoHelperSuite
+
+RUN pip install -r requirements.txt
 
 # kj nodes
 RUN git clone https://github.com/kijai/ComfyUI-KJNodes /workspace/ComfyUI/custom_nodes/ComfyUI-KJNodes
